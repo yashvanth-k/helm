@@ -5,7 +5,8 @@
 replicaCount: 2
 
 image:
-  repository: argotest1.azurecr.io/httpd:{{ .Values.image.tag }}
+  repository: argotest1.azurecr.io/httpd
+  tag: {{ .Values.image.tag }}
   pullPolicy: Always
 
 service:
