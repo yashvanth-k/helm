@@ -5,9 +5,9 @@
 replicaCount: 2
 
 image:
-  repository: gcr.io/heptio-images/ks-guestbook-demo
-  tag: 0.3
-  pullPolicy: IfNotPresent
+  repository: argotest1.azurecr.io/httpd
+  tag: ""
+  pullPolicy: Always
 
 service:
   type: ClusterIP
